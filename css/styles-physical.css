@@ -33,6 +33,10 @@ font-weight: bold;
   --gray10: #616161;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--gray30);
   font-family: 'Roboto', sans-serif;
@@ -46,7 +50,20 @@ a {
 
 header {
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  /*border: 1px solid rgb(27, 25, 25);*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  top: 64px;
+  /*left: -232px;*/
+  /*top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 50px;
+  top left bottom right z-index: border: 1px solid red;*/
+  z-index: 1;
 }
 
 header a {
@@ -59,12 +76,18 @@ header a:hover{
 
 nav details summary{
   font-weight: bold;
+  line-height: 24px;
+  }
+
+header li {
+  margin-bottom: 16px;
 }
 
 h1 {
   font-size: 60px;
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
   /*font-size: 3.75em; */
 }
 
@@ -86,6 +109,9 @@ h3 {
   margin-top: 16;
   margin-bottom: 24;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 pre {
@@ -109,11 +135,22 @@ blockquote span {
 blockquote span::before {
   content: "-";
 }
-.mai hr {
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+.main hr {
   display: none;
 }
 
 .main {
+  /*margin: center;*/
   /*border: 1px solid red;*/
   /*background: orangered;*/
 }
@@ -125,15 +162,15 @@ blockquote span::before {
 }
 
 .main-content {
-  background: whitesmoke;
-  padding: 10px;
+  background: white;
+  /*padding: 10px;*/
   /*padding-right: 10px;*/
 }
 
 .debug {
-  box-shadow: inset 0 0 0 1px red;
+  /*box-shadow: inset 0 0 0 1px red;
   outline: 1px solid red;
-  background: red;
+  background: red;*/
 }
 
 .hero {
@@ -146,6 +183,7 @@ background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), ur
 
 .section-content {
   margin-top: 164px;
+  position: relative;
 }
 .section-content:first-of-type {
   margin: 0;
@@ -174,7 +212,7 @@ background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), ur
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -183,9 +221,12 @@ background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), ur
 
 .section-content h3::after {
   content: "";
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
-  display: block;
+  /*display: block;*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
