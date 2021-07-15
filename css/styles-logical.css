@@ -45,9 +45,26 @@ a {
   color: var(--white30);
 }
 
+
+
+
+  .header {
+    /*position: sticky;
+    inset-block-start: -45px; */
+  }
+  .header-content {.
+    padding-inline: 20px;
+    /* position: relative;
+    inset-block-start: 65px;*/
+  }
 header {
+  margin-block-start: 20px;
   font-size: 14px;
   color: var(--white);
+  /*position: absolute;*/
+  /*inset-block-start: 0;
+  inset-inline-start: -208px;
+  inline-size: 188px; */
 }
 
 header li {
@@ -71,8 +88,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 60px;
-  margin-block-start: 64px;
+    font-size: 40px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
     /*font-size: 3.75em; */
 }
@@ -95,10 +112,22 @@ hr {
 
 pre {
   background: var(--white10);
-  /*padding: 40px;
+  padding: 40px;
   overflow: auto;
   border-radius: 8px;
-  border: 1px solid red;*/
+  border: 10px solid red;
+  border-left: 5px solid blue;
+  border-inline-start: 5px solid white;
+  border-block-end: 20px solid pink;
+  border-inline-end: 5px solid greenyellow;
+  border-block-start-color: blue;
+  border: 10px solid #5551FF;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
+  margin-block-end: 30px;
+  /*border-radius: 50%;
+  inline-size: 400px;
+  block-size: 400px;*/
+  /*border-start-start-radius: 60px;*/
 }
 
 p {
@@ -111,7 +140,7 @@ background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 /*background-repeat: no-repeat;*/
 /*background-position: center;*/
 /*background-size: cover;*/
-  height: 350px;
+    block-size: 50px;
 }
 
 
@@ -149,6 +178,13 @@ margin-block-start: 80px;
 margin-block-end: 63px;
 background-color: var(--white10);
 border-radius: 8px;
+line-height: 32px;
+font-size: 24px;
+/* padding: 24px; */
+padding-inline-end: 24px;
+padding-inline-start: 24px;
+padding-block-start: 24px;
+padding-block-end: 24px;
 }
 
 
@@ -157,18 +193,53 @@ border-radius: 8px;
 }
 
 .main {
-
+/* padding: 10px; */
+/* border: 1px solid red; */
 }
 
 .wrapper {
 max-inline-size: 902px;
-block-size: 100px;
+/*block-size: 100px; */
 /*overflow: auto;*/
 margin: auto;
 /* width: ;*/
 }
 
 .main-content {
-
+padding-inline: 16px;
 }
 
+.form input [type="submit"]{
+  background: #157EFB;
+  border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20)
+}
+
+
+@media screen and (min-width: 1366px) {
+  .hero{
+    block-size: 350px;
+  }
+  .header {
+    position: sticky;
+    inset-block-start: 65px;
+  }
+  .header-content {
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size: 188px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+}
