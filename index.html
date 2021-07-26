@@ -41,7 +41,7 @@
       <div class="header-content">
         <header>
           <nav>
-            <details>
+            <details open>
               <summary>
                 Setup
               </summary>
@@ -68,7 +68,7 @@
                 </li>
                 <ol>
             </details>
-            <details>
+            <details open>
               <summary>
                 Conceptos esenciales del Deasrrollo Web
               </summary>
@@ -107,8 +107,7 @@
           <h3 id="google-crome">Google Chrome</h3>
           <p>
             Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas
-            de
-            desarrollo avanzadas y de amigable uso.
+            de desarrollo avanzadas y de amigable uso.
           </p>
           <img src="image/visual-studio-code.png" alt="Logo de Visual Studio Code"
             title="Logo del editor de Visual Studio Code">
@@ -149,19 +148,19 @@
             <p> Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el
               significado y la estructura del contenido.</p>
                 <pre>
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-    &lt;/body&gt;
-    &lt;/html&gt;
-    </pre>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
             <h3>Etiquetas</h3>
             <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una
               tiene
@@ -197,7 +196,6 @@
               la presentación de documentos HTML</p>
             <img src="image/css.png" alt="Hoja de Estilo en Cascada">
           </section>
-          <section class="section-content">
             <h2>Modelo de caja</h2>
             <h3>El modelo de caja está compuesto por:</h3>
             <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
@@ -238,16 +236,46 @@
               <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
               <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start |padding-inline-end</li>
             </ul>
-          </section>
+            <div class="section-contet">
+              <h2>Hola estos son unos videos muy lindos</h2>
+              <div class="slider">
+                <scroll-container class="slider-container">
+                  <scroll-page class="slider-slide" id="video-1">
+                    <iframe class="video" width="424" height="238" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
+                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </scroll-page>
+                  <scroll-page class="slider-slide" id="video-2">
+                    <iframe class="video" width="424" height="238" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
+                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </scroll-page>
+                  <scroll-page class="slider-slide" id="video-3">
+                    <iframe class="video" width="424" height="238" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player"
+                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </scroll-page>
+                </scroll-container>
+                <div class="slider-bullet-list">
+                  <a href="#video-1" class="slider-bullet-list"></a>
+                  <a href="#video-2" class="slider-bullet-list"></a>
+                  <a href="#video-3" class="slider-bullet-list"></a>
+                </div>
+              </div>
+            </div>
         <p>
           Si tienes alguna pregunta escríbeme a:
-          <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+          <a href="mailto:me@leonidasesteban.com"> me@leonidasesteban.com</a>
         </p>
-
+        <div class="section-content">
+          <h2>Suscríbete a nuestro newsletter</h2>
+          <form action="#" class="form">
+            <input type="texto" required placeholder="Nombre">
+            <input type="email" required placeholder="Correo Electrónico">
+            <input type="submit" value="Suscribirme"></form>
+        </div>
       </div>
-
     </div>
   </main>
-  <img src="" alt="">
 </body>
 </html>
